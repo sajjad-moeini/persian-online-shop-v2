@@ -101,6 +101,7 @@ top: 0;
      left: 0;
      right: 0;
       background-color: #9589898a;
+      z-index: 1;
 }
 .cart-icon-container{
        margin-right: -5vw !important;
@@ -155,8 +156,193 @@ main{
        }
 }
 //////////////////////////////////// suggest finish
-/// ///////////////////////////////// main finish
-///////////////////////////////// companys start
+
+///////////////////////////////// top-sellers start
+.top-sellers{
+       margin-top: 5vh !important;
+} 
+.sections-title{
+       width: fit-content;
+       text-align: center;
+       border-bottom: 4px solid gray;
+       cursor: pointer;
+       transition: all .5s;
+       &:hover{
+              border-bottom: 4px solid rgb(17, 82, 135);
+              color: #555;
+       }
+}
+.top-seller-boxes-container{
+       width: 95%;
+}
+.top-seller-box{
+       margin-top: 5vh;
+       width: 23%;
+       height: 40vh;
+       margin-left: .5vw;
+       margin-right: .5vw;
+       box-shadow: 0px 5px 10px 1px gray;
+       border-radius: 1.5vw;
+       overflow: hidden;
+       background-color: rgba(128, 128, 128, 0.317);
+       cursor: pointer;
+       transition: all .5s;
+       img{
+              width: 100%;
+              height: 75%;
+       }
+       &:hover{
+              transform: translateY(-2vh);
+       }
+}
+.top-seller-box-details{
+       width: 100%;
+       height: 25%;
+
+       .d-flex{
+              justify-content: space-around;
+              align-items: center;
+              h5{
+                     margin-right: -5%;
+              }
+              button{
+                     font-size: 1rem;
+                     background-color: #48b0c7;
+                     padding: .8vh 1vw;
+                     color: #fff;
+                     border: 0;
+                     border-radius: .5vw;
+                     cursor: pointer;
+                     transition: all .5s;
+                     &:hover{
+                            background-color: #1c768a;
+                     }
+       
+              }
+       }
+
+       h3{
+              margin-right: 10%;
+              margin-top: 2%;
+       }
+      
+}
+/// ///////////////////////////////// top-sellers finish
+
+/// ///////////////////////////////// store pic start
+.store-pic{
+       margin-top: 10vh;
+       width: 100% !important;
+       height: 25vh;
+       background: url(../pics/bg/pxfuel\ \(2\).jpg);
+       background-size: cover;
+       background-attachment: fixed;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       p{
+              font-size: 2.5rem;
+              color: #fff;
+       }
+    
+}
+///////////////////////////////// store pic finish
+
+
+.new-products{
+       @extend .top-sellers
+}
+.new-products-boxes-container{
+       @extend .top-seller-boxes-container
+}
+.new-product-box{
+       @extend .top-seller-box
+}
+.new-product-box-details{
+       @extend .top-seller-box-details
+}
+
+.unique-style{
+       width: 100%;
+       display: flex;
+       margin-top: 10vh !important;
+       height: 30vh !important;
+       background: url(../pics/bg/HD-wallpaper-fashion-models-models-beautiful-girls-female-and-men-casual-clothes-fashion-beautiful-boys.jpg);
+       background-size: cover;
+       background-attachment: fixed;
+}
+.unique-style-container{
+       background-color: rgba(128, 128, 128, 0.422);
+       h1{
+              color: #fff;
+       }
+       button{
+              font-size: 1rem;
+              padding: .7vh 1vw !important;
+              border: 0;
+              border-radius: .5vw;
+              background-color: #48b0c7;
+              color: #fff;
+              transition: all .5s;
+              cursor: pointer;
+              &:hover{
+                     background-color: #1c768a;
+              }
+       }
+}
+
+.why-us{
+       width: 100%;
+       margin-top: 10vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center
+}
+.why-us-title{
+       @extend .top-sellers-title;
+       // margin: 0 auto;
+}
+.why-us-boxes{
+       width: 90%;
+       display: flex;
+       flex-wrap: wrap;
+}
+.why-us-box{
+       width: 35%;
+       height: 20vh;
+       margin: 5vh 5vw;
+       display: flex;
+       gap: 10vw;
+       position: relative;
+       background-color: rgba(128, 128, 128, 0.137);
+       border-radius: 2vw;
+       img{
+              position: absolute;
+              width: 25%;
+              right: -65;
+              top: -10;
+              height: 107%;
+              border-radius: 50%;
+       }
+}
+.why-us-inform{
+       height: 100%;
+       width: 50%;
+       margin-right: 15%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       p{
+              color: rgba(0, 0, 0, 0.527);
+       }
+
+}
+.why-us-box-title{
+       font-size: 1.7rem;
+}
+
+/// /////////////////////////////////' main finish'
+///////////////////////////////// 'companys start'
 .companys{
        background-color: #88888885;
        margin-top: 10vh !important;

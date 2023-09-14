@@ -293,15 +293,12 @@ main{
 
 .why-us{
        width: 100%;
-       margin-top: 10vh;
+       margin-top: 10vh !important;
        display: flex;
        flex-direction: column;
        align-items: center
 }
-.why-us-title{
-       @extend .top-sellers-title;
-       // margin: 0 auto;
-}
+
 .why-us-boxes{
        width: 90%;
        display: flex;
@@ -310,7 +307,7 @@ main{
 .why-us-box{
        width: 35%;
        height: 20vh;
-       margin: 5vh 5vw;
+       margin: 5vh 5vw !important;
        display: flex;
        gap: 10vw;
        position: relative;
@@ -328,7 +325,7 @@ main{
 .why-us-inform{
        height: 100%;
        width: 50%;
-       margin-right: 15%;
+       margin-right: 15% !important;
        display: flex;
        flex-direction: column;
        justify-content: space-around;

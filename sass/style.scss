@@ -404,3 +404,65 @@ footer{
 //               font-size: .8rem !important;
 //        }
 // } 
+
+@media screen and (max-width:1044px){
+       .suggest-box-text{
+              position: absolute;
+              top: 30;
+              left: 12;
+              h3{
+                     font-size: .8rem;
+              }
+              h5{
+                     font-size: .5rem;
+              }
+       }
+       .top-seller-box{
+              width: 45% !important;
+              margin-top: 5vh !important;
+       }
+       .store-pic{
+              p{
+                     font-size: 1.7rem;
+              }
+       }
+       .why-us-box{
+              width: 100% !important;
+
+       }
+}
+@media screen and (max-width:568px){
+       .top-seller-box{
+              h3{
+                     font-size: .9rem;
+              }
+              .d-flex{
+                     h5{
+                            font-size: .5rem;
+                     }
+                     button{
+                            padding-left: 1vw;
+                            padding-right: 1vw;
+                     }
+                     
+              }
+       }
+       .store-pic{
+              p{
+                     font-size: 1rem;
+              }
+       }
+       .unique-style-container{
+              h1{
+                     font-size: 1.4rem;
+              }
+       }
+       .why-us-inform{
+              h4{
+                     font-size: 1.1rem !important;
+              }
+              p{
+                     font-style: .3rem !important;
+              }
+       }
+}

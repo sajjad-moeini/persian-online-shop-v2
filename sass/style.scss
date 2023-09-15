@@ -385,12 +385,9 @@ footer{
               }
        }
 }
-// .footer-container{
-//        position: fixed;
-//        bottom: 0;
-// }
+
 ///////////////////////////////// footer finish
-/// 
+
 @media screen and (max-width:768px) {
        .account-nav-item{
               font-size: 1rem !important;
@@ -399,12 +396,6 @@ footer{
               padding: .5vh .5vw;
        }
 } 
-// @media screen and (max-width:400px) {
-//        .account-nav-item{
-//               font-size: .8rem !important;
-//        }
-// } 
-
 @media screen and (max-width:1044px){
        .suggest-box-text{
               position: absolute;
